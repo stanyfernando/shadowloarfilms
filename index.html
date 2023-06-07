@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+        font-family: 'Cormorant Garamond', serif;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0 20px;
+      }
+
+      .image-box {
+        margin-bottom: 25px;
+        padding: 0 20px;
+        /* Add padding to image box */
+      }
+
+      .paragraphs {
+        text-align: justify;
+        margin-top: 20px;
+        padding: 0 20px;
+        /* Add padding to paragraphs */
+        font-size: 16px;
+        max-width: 600px;
+        /* Add maximum width to paragraphs */
+        margin-left: auto;
+        /* Center align paragraphs on larger screens */
+        margin-right: auto;
+        /* Center align paragraphs on larger screens */
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        /* Add padding to menu */
+        font-family: 'Crimson Text', serif;
+        margin-top: 30px;
+      }
+
+      .menu-item {
+        position: relative;
+        margin: 0 10px;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+      }
+
+      .menu-item:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        opacity: 1;
+        transition: opacity 0.2s ease-in;
+      }
+
+      .menu-item::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        opacity: 0;
+        transition: opacity 0.2s ease-out;
+      }
+
+      .separator {
+        width: 2px;
+        height: 18px;
+        background-color: white;
+        margin: 0 10px;
+      }
+
+      /* Media Query for smaller screens */
+      @media (max-width: 600px) {
+        .container {
+          padding: 0;
+        }
+
+        .image-box {
+          padding: 0;
+        }
+
+        .paragraphs {
+          padding: 0 20px;
+          margin: 0;
+          font-size: 18px;
+        }
+
+        .menu {
+          padding: 0;
+        }
+
+        .menu-item {
+          margin: 0 5px;
+        }
+
+        .separator {
+          margin: 0 5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-box">
+        <img src="https://i.ibb.co/Gk3jcbk/Layer-1.png" alt="Image" style="max-width: 100%;">
+      </div>
+      <div class="paragraphs">
+        <p>In the depths of the ethereal night, where shadows dance with restless whispers, there exists a realm forged in darkness. Welcome to an enigmatic realm where harbingers of chilling tales, weavers of nightmares, and conjurers of spine-tingling spectacles gather.</p>
+        <p>Within our haunted halls, visionary storytellers are entwined with the macabre. From the very depths of their souls, they summon tales that defy reason and embrace the allure of the unknown. Their pens drip with ink as black as the heart of midnight, their words casting spells that awaken dormant fears.</p>
+        <p>In this realm, the boundaries between reality and nightmare blur into obscurity. Every frame resonates with an ominous energy, a foreboding presence that sends shivers down the spines of those who dare to venture into our haunted celluloid dreams.</p>
+        <p>Beneath the moon's watchful gaze, scenes of dread and despair are meticulously sculpted. The rustle of decaying leaves carries whispers of forgotten secrets, while the howl of the wind echoes with the cries of lost souls. Our cinematic incantations lure you into a labyrinth of darkness, where the flickering glow of candlelight illuminates hidden truths, and the air is thick with anticipation.</p>
+        <p>Uncover the cryptic beauty that lies within the heart of fear. Embrace the macabre wonders that only the darkest recesses of the imagination can conceive. As the gates swing open, prepare to be enthralled by the mysterious and the horrific, for we are the purveyors of nightmares, the architects of dread. Welcome to a world where the shadows hold sway, and where your deepest fears find solace in the haunting tapestry of our art.</p>
+      </div>
+      <div class="menu">
+        <a href="https://www.youtube.com/@shadowloar?sub_confirmation=1" target="_blank" class="menu-item">Films</a>
+        <div class="separator"></div>
+        <a href="https://www.instagram.com/shadowloar/" target="_blank" class="menu-item">Instagram</a>
+        <div class="separator"></div>
+        <a href="https://www.tiktok.com/@shadowloar" target="_blank" class="menu-item">TikTok</a>
+      </div>
+    </div>
+  </body>
+</html>
