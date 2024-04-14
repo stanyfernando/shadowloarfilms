@@ -1,27 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>shadow loar</title>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        background-color: black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SHADOWLOAR FILMS</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,400;700&display=swap" rel="stylesheet">
+		<meta property="og:title" content="Stany Fernando">
+		<link rel="icon" type="image/png" href="https://i.ibb.co/DK8jXzz/shadowloar-fav.jpg">
+		<meta property="og:description" content="Passionate artisans weaving captivating tales, transcending reality to mesmerize audiences">
+		<meta property="og:image" content="https://i.ibb.co/6PRkgG0/social-share.jpg">
+		<meta property="og:url" content="https://stanyfernando.github.io/shadowloarfilms.github.io">
+		<style>
+			body {
+				background-color: black;
+				margin: 0;
+				padding: 0;
+				min-height: 100vh;
+				/* Ensures page takes up at least full viewport height */
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: 'Crimson Pro', serif;
+				/* Apply Crimson Pro font to the entire page */
+			}
 
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }
-</style>
-</head>
-<body>
-    <img src="https://i.ibb.co/WFw0xLP/shadowloar.jpg" alt="Centered Image">
-</body>
+			.container {
+				width: 50%;
+				/* Adjusted for responsiveness */
+				max-width: 850px;
+				margin: 0 auto;
+				/* Center the container */
+				text-align: center;
+				/* Center content within container */
+			}
+
+			img {
+				display: block;
+				margin: 0 auto 20px;
+				/* Added margin at the bottom */
+				max-width: 65%;
+				/* Make image responsive */
+				height: auto;
+				/* Ensure aspect ratio is maintained */
+				transition: filter 0.5s ease-in-out;
+				/* Add transition for ease effect */
+				filter: brightness(15%);
+				/* Dim the image by default */
+			}
+
+			/* Apply hover effect only for devices with min-width greater than 768px */
+			@media only screen and (min-width: 769px) {
+				img:hover {
+					filter: brightness(100%);
+					/* Brighten the image on hover */
+				}
+			}
+
+			.youtube-video {
+				margin-bottom: 30px;
+				/* Added margin to separate from the menu */
+				margin-top: 60px;
+				/* Adjusted margin for smaller screens */
+			}
+
+			.youtube-video iframe {
+				width: 335px;
+				/* Make the iframe responsive */
+				height: 600px;
+				/* Allow the height to adjust according to aspect ratio */
+			}
+
+			nav {
+				margin-top: 20px;
+				/* Adjusted margin to avoid overlapping with video on smaller screens */
+			}
+
+			nav ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 35px;
+			}
+
+			nav ul li {
+				display: inline;
+				position: relative;
+				/* Added position relative */
+			}
+
+			nav ul li:not(:last-child)::after {
+				content: '|';
+				color: white;
+				margin-left: 50px;
+				margin-right: 55px;
+				font-weight: 700;
+				/* Set font weight to Extra Bold Regular */
+				font-style: normal;
+				/* Ensure the divider is not italic */
+			}
+
+			nav ul li a {
+				color: white;
+				text-decoration: none;
+				position: relative;
+				/* Added position relative */
+				font-style: italic;
+				/* Apply italic style to the menu items */
+			}
+
+			nav ul li a::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -2px;
+				/* Position the underline below the text */
+				width: 100%;
+				height: 2px;
+				background-color: white;
+				transform: scaleX(0);
+				/* Initially, set the width to 0 */
+				transform-origin: bottom right;
+				/* Set the transform origin to bottom right */
+				transition: transform 0.3s ease-in;
+				/* Add transition with ease-in effect */
+			}
+
+			nav ul li a:hover::after {
+				transform: scaleX(1);
+				/* Set the width to 1 to make the underline visible */
+				transform-origin: bottom left;
+				/* Change the transform origin on hover */
+			}
+
+			footer {
+				margin-top: 10px;
+				color: white;
+				font-size: 12px;
+			}
+
+			/* Media Queries for responsiveness */
+			@media only screen and (max-width: 1200px) {
+				.container {
+					width: 90%;
+					/* Adjusted width for smaller screens */
+				}
+
+				.youtube-video {
+					margin-top: 30px;
+					/* Adjusted margin for smaller screens */
+				}
+
+				nav ul li {
+					display: block;
+					/* Change display to block for vertical menu */
+					margin-bottom: 10px;
+					/* Add margin between menu items */
+				}
+
+				nav ul li:not(:last-child)::after {
+					display: none;
+					/* Hide divider on mobile devices */
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<img src="https://i.ibb.co/MNF8gQr/Layer-1.png" alt="Center Image">
+			<div class="youtube-video">
+				<iframe width="668" height="375" src="https://www.youtube.com/embed/LekvLbr4l08" title="TEASER #2 - Horror Short Film" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<nav>
+				<ul>
+					<li>
+						<a href="https://www.youtube.com/@SHADOWLOAR" target="_blank">Films</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/shadowloar/" target="_blank">Instagram</a>
+					</li>
+					<li>
+						<a href="https://www.tiktok.com/@shadowloar" target="_blank">TikTok</a>
+					</li>
+				</ul>
+			</nav>
+			<footer>Ⓒ SHADOWLOAR Films 2024</footer>
+		</div>
+	</body>
 </html>
